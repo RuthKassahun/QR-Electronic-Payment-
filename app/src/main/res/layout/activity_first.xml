@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstActivity"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/purple_background"
+    tools:context=".firstActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,14 +16,14 @@
         android:src="@drawable/scana" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SignupButton"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:text="Sign up"
-        android:textSize="20dp"
-        android:textColor="#000000"
         android:background="@drawable/custom_button"
+        android:text="Sign up"
         android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
@@ -32,18 +32,18 @@
         app:layout_constraintVertical_bias="0.794" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/LoginButton"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:text="Login"
-        android:textSize="20dp"
-        android:textColor="#000000"
         android:background="@drawable/custom_button"
+        android:text="Login"
         android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/SignupButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.794" />
 
