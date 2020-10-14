@@ -148,15 +148,16 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="248dp"
-        android:layout_height="48dp"
+        android:layout_width="251dp"
+        android:layout_height="64dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="32dp"
         android:text="I agree to be bound by  Q-pay user agreement and privacy statement"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6"
         tools:ignore="MissingConstraints" />
@@ -165,26 +166,25 @@
         android:id="@+id/checkBox"
         android:layout_width="51dp"
         android:layout_height="59dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/editText6"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="239dp"
-        android:layout_height="48dp"
-        android:background="@drawable/gradient_background"
+        android:id="@+id/SignupButton"
+        android:layout_width="215dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/gradient_button"
         android:text="Sign up"
-        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.907"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
