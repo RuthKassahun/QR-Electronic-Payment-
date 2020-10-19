@@ -29,4 +29,8 @@ dependencies {
 
     //added for password layout
     implementation 'com.hanks:passcodeview:0.1.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+
+
 }
