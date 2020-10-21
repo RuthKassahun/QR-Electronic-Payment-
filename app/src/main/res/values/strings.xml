@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
+    
+    
+    <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
 </resources>

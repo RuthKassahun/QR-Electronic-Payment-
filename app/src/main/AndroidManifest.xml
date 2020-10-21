@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Send"></activity>
+        <activity android:name=".AddBankAccount"></activity>
+        <activity android:name=".Account" />
+        <activity android:name=".Transaction" />
+        <activity android:name=".Recieve" />
+        <activity android:name=".Send" />
         <activity android:name=".verifyphone" />
         <activity android:name=".Homes" />
         <activity android:name=".loginActivity" />
