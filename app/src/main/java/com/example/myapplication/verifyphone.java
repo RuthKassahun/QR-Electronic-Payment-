@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,10 @@ public class verifyphone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verifyphone);
+
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         VerifyButton = findViewById(R.id.VerifyButton);
 

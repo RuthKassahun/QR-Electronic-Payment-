@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -59,6 +60,19 @@ public class Send extends AppCompatActivity {
             }
 
         });
+
+
+        continuebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(Send.this,SendViaAccount.class);
+                startActivity(i);
+
+            }
+        });
+
+
         cancelbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
