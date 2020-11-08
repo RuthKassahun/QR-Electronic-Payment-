@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".Recieve">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:id="@+id/qrc"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Requested Amount"
+            android:layout_below="@id/qrc"
+            android:gravity="center"
+            android:id="@+id/edittext"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Request Code"
+            android:layout_below="@id/edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:id="@+id/qrcgen"/>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
