@@ -6,10 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIMEOUT = 1000;
+    private View decorView;
+    private static int SPLASH_TIMEOUT = 4000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent (MainActivity.this, firstActivity.class);
+                Intent i = new Intent(MainActivity.this, Login.class);
                 startActivity(i);
                 finish();
             }

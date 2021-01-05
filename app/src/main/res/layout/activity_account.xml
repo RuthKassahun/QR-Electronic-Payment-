@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".Account">
 
     <Button
         android:id="@+id/addBankAccount"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="175dp"
         android:layout_gravity="center"
-        android:text="Add Account"
 
-        />
+        android:background="@drawable/rounded_button"
+        android:text="Add Account"
+        android:textColor="#f2f2f2"/>
 
 
 </LinearLayout>

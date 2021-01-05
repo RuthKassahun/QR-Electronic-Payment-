@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_button_white"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/circlebackground"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="#03a9f4"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: user001"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: user0002"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount: 250 ETB"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction id: e001frdxr67112"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 12/6/2020"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 23:04"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#03a9f4" />
+
+    </LinearLayout>
+</LinearLayout>

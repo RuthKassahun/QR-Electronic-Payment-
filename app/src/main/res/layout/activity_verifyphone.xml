@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".verifyphone">
 
+
     <View
         android:id="@+id/topview"
         android:layout_width="447dp"
@@ -18,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <View
         android:id="@+id/view2"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.493" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/verification_code_entered_by_user"
         android:layout_width="301dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -84,7 +84,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/VerifyButton"
+        android:id="@+id/verify_btn"
         android:layout_width="215dp"
         android:layout_height="59dp"
         android:layout_marginEnd="108dp"
@@ -97,7 +97,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toEndOf="@+id/SignupButton"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/verification_code_entered_by_user"
         app:layout_constraintVertical_bias="0.396" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
