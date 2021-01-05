@@ -1,19 +1,17 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-
-import com.google.zxing.WriterException;
+import android.widget.LinearLayout;
 
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
@@ -23,7 +21,7 @@ public class Recieve extends AppCompatActivity {
     String inputvalue;
     EditText edttxt;
     ImageView qrimg;
-    Button start;
+    private LinearLayout qrcgen;
     QRGEncoder qrgEncoder;
     Bitmap bitmap;
 
@@ -31,10 +29,19 @@ public class Recieve extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recieve);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         qrimg=(ImageView)findViewById(R.id.qrc);
         edttxt=(EditText)findViewById(R.id.edittext);
-        start=(Button)findViewById(R.id.qrcgen);
-        start.setOnClickListener(new View.OnClickListener() {
+
+        qrcgen = findViewById(R.id.qrcgen);
+
+        qrcgen.setClickable(true);
+
+
+        qrcgen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 inputvalue=edttxt.getText().toString().trim();

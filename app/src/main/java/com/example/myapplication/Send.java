@@ -18,8 +18,8 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class Send extends AppCompatActivity {
-    private Button scan_btn;
     private LinearLayout viaAccount,viaQR;
+    private LinearLayout scan_btn;
     private Button continuebtn,cancelbtn;
     Animation fade;
 
@@ -28,8 +28,10 @@ public class Send extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send);
 
-        scan_btn = (Button) findViewById(R.id.scan_btn);
+        scan_btn = findViewById(R.id.scan_btn);
         final Activity activity = this;
+        scan_btn.setClickable(true);
+
         scan_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

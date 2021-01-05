@@ -8,7 +8,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
 
         <ImageView
             android:layout_width="200dp"
@@ -22,18 +23,51 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Requested Amount"
+            android:hint="Enter Requested Amount Here"
             android:layout_below="@id/qrc"
             android:gravity="center"
             android:id="@+id/edittext"
             />
-        <Button
+
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generate Request Code"
+            android:elevation="2dp"
+            app:cardCornerRadius="6dp"
+            app:cardUseCompatPadding="true"
             android:layout_below="@id/edittext"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20sp"
-            android:id="@+id/qrcgen"/>
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:id="@+id/qrcgen">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate Request Code"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#03A9FA" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
