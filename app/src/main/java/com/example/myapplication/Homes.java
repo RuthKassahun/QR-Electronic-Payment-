@@ -60,7 +60,7 @@ public class Homes extends AppCompatActivity {
         transactionLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Homes.this,Transaction.class);
+                Intent i = new Intent(Homes.this,ChooseAccount.class);
                 startActivity(i);
             }
         });

@@ -5,4 +5,12 @@
 
 
     <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
+
+    <string-array name="bankNames">
+        <item>CBE</item>
+        <item>DASHEN BANK</item>
+        <item>AWASH BANK</item>
+
+
+    </string-array>
 </resources>

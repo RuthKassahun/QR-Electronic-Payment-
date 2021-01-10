@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAccount">
+
+
+    <RelativeLayout
+        android:id="@+id/r11"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/atmCard"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/credit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BANK NAME"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/bankName"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:layout_below="@+id/bankName"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/code"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARD HOLDER"
+            android:layout_below="@+id/code"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/cardHolder"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/cardHolder"
+            android:layout_below="@id/code"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:id="@+id/mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/layout1"
+            android:layout_below="@id/code"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:text="/"
+            android:textColor="#ffffff"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/div"
+            android:layout_below="@id/code"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:id="@+id/yy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YY"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:layout_toEndOf="@id/layout2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/code"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/r111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:id="@+id/atmCard1"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/credit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BANK NAME"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/bankName1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:layout_below="@+id/bankName1"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/code1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARD HOLDER"
+            android:layout_below="@+id/code1"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/cardHolder1"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/cardHolder1"
+            android:layout_below="@id/code1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/month1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:id="@+id/mm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/div1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/layout11"
+            android:layout_below="@id/code1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:text="/"
+            android:textColor="#ffffff"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layout21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/div1"
+            android:layout_below="@id/code1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/year1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:id="@+id/yy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YY"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cvv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:layout_toEndOf="@id/layout21"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/code1"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
