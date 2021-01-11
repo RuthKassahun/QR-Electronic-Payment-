@@ -65,6 +65,11 @@ public class Login extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+
     private boolean validateUserName() {
         String val = logUsername.getEditText().getText().toString();
 

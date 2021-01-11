@@ -2,10 +2,15 @@
     <string name="app_name">Quick Pay</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
-    <string name="stringbalance">200</string>
+    <string name="stringbalance">2,540.00</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
+
+    <string name="BankBranch">ደብረ ብርሀን ቅርንጫፍ</string>
+    <string name="CardType">የቁጠባ ሂሳብ</string>
+    <string name="LocationNotFound">ያሉበት ቦታ አልታወቀም</string>
+    <string name="UserPhoneNo">ስልክ ቁጥር ያስመዝግቡ</string>
 </resources>
