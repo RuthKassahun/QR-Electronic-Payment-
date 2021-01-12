@@ -7,6 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -43,6 +44,8 @@ public class Homesalter extends AppCompatActivity {
         tn001.setClickable(true);
         tn002.setClickable(true);
 
+
+
         receiveLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +79,8 @@ public class Homesalter extends AppCompatActivity {
                 ShowPopup();
             }
         });
+
+
 
 
     }
