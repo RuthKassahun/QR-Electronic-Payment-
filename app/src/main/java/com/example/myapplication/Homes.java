@@ -4,10 +4,7 @@ import androidx.annotation.StringDef;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-<<<<<<< HEAD
-=======
 import androidx.drawerlayout.widget.DrawerLayout;
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -25,12 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Homes extends AppCompatActivity {
 
-<<<<<<< HEAD
-    private CardView sendLayout;
-    private LinearLayout topperLayout;
-    private CardView transactionLayout;
-    private CardView accountLayout;
-=======
     private CardView accountLayout;
     private LinearLayout receiveLayout;
     private LinearLayout sendLayout;
@@ -39,7 +30,6 @@ public class Homes extends AppCompatActivity {
     private ImageButton hamburgermenu;
     Dialog myDialog;
     TextView balance;
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,25 +39,12 @@ public class Homes extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-<<<<<<< HEAD
-        sendLayout =  findViewById(R.id.sendLayout);
-        topperLayout = findViewById(R.id.topperLayout);
-        transactionLayout = findViewById(R.id.transactionLayout);
-        accountLayout = findViewById(R.id.accountlayout);
-
-        //sendLayout.setClickable(true);
-        topperLayout.setClickable(true);
-        //transactionLayout.setClickable(true);
-        //accountLayout.setClickable(true);
-        
-=======
         balance = findViewById(R.id.balance);
         balance.setText("0.00");
 
         accountLayout = findViewById(R.id.accountlayout);
 
         accountLayout.setClickable(true);
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
         myDialog = new Dialog(this);
         receiveLayout = findViewById(R.id.receiveLayout);
@@ -102,12 +79,8 @@ public class Homes extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
-        topperLayout.setOnClickListener(new View.OnClickListener() {
-=======
 
         receiveLayout.setOnClickListener(new View.OnClickListener() {
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
             @Override
             public void onClick(View view) {
 
@@ -165,6 +138,5 @@ public class Homes extends AppCompatActivity {
     public void onBackPressed() {
         this.finishAffinity();
     }
-
 
 }

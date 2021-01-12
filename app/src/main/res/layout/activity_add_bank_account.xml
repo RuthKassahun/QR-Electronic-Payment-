@@ -12,7 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:gravity="center"
+
+        >
 
         <ImageView
             android:id="@+id/atmCard"
@@ -31,7 +33,6 @@
             android:layout_marginStart="60dp"
             android:id="@+id/bankName"
             />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +157,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/r12"
         android:layout_marginTop="0dp"
-        android:layout_marginLeft="25dp"
         android:layout_below="@+id/r11"
         >
 
@@ -184,6 +184,7 @@
 
     </RelativeLayout>
 
+
     <RelativeLayout
 
         android:layout_width="match_parent"
@@ -191,7 +192,7 @@
         android:id="@+id/r13"
         android:layout_below="@id/r12"
         android:layout_marginTop="0dp"
-        android:layout_marginLeft="25dp">
+        >
 
 
         <TextView
@@ -331,25 +332,18 @@
             />
 
         <Button
-            android:id="@+id/proceed"
             android:layout_width="215dp"
             android:layout_height="59dp"
             android:layout_below="@+id/et8"
-            android:layout_centerVertical="true"
+            android:text="ADD ACCOUNT"
             android:layout_marginTop="20dp"
+            android:gravity="center"
+           android:layout_centerInParent="true"
             android:layout_marginBottom="20dp"
-<<<<<<< HEAD
-            android:background="@drawable/rounded_button"
+            android:background="@drawable/gradient_button"
             android:textColor="#FFFFFF"
             android:id="@+id/proceed"
             />
-=======
-            android:layout_marginLeft="25dp"
-            android:background="@drawable/rounded_button"
-            android:gravity="center"
-            android:text="ADD ACCOUNT"
-            android:textColor="#FFFFFF" />
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
     </RelativeLayout>
 

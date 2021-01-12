@@ -2,11 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-<<<<<<< HEAD
-    <solid android:color="@color/purple"/>
-=======
     <solid android:color="@color/btColor"/>
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
     <corners android:radius="5dp"/>
 

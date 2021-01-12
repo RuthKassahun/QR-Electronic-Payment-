@@ -57,13 +57,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/lin"
-<<<<<<< HEAD
-        android:orientation="vertical"
-        android:paddingTop="150dp">
-=======
         android:paddingTop="150dp">
 
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
@@ -76,16 +71,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
-<<<<<<< HEAD
-    </LinearLayout>
-
-</LinearLayout>
-=======
 
         </LinearLayout>
 
     </LinearLayout>
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
 
 

@@ -12,18 +12,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
-<<<<<<< HEAD
-import android.widget.Toast;
-
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-
-public class Send extends AppCompatActivity {
-    private LinearLayout viaAccount,viaQR;
-    private LinearLayout scan_btn;
-    private Button continuebtn,cancelbtn;
-    Animation fade;
-=======
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +22,6 @@ public class Send extends AppCompatActivity {
     private LinearLayout scan_btn;
     TextView showresult;
 
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,42 +31,10 @@ public class Send extends AppCompatActivity {
         scan_btn = findViewById(R.id.scan_btn);
         final Activity activity = this;
         scan_btn.setClickable(true);
-<<<<<<< HEAD
-
-        scan_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                IntentIntegrator integrator = new IntentIntegrator(activity);
-                integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE);
-                integrator.setPrompt("Scan");
-                integrator.setCameraId(0);
-                integrator.setBeepEnabled(false);
-                integrator.setBarcodeImageEnabled(false);
-                integrator.initiateScan();
-            }
-        });
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
-        viaAccount = findViewById(R.id.qrSend);
-        viaQR = findViewById(R.id.viaQR);
-        continuebtn = findViewById(R.id.btnContinue);
-        cancelbtn = findViewById(R.id.bthCancel);
-=======
         showresult = findViewById(R.id.showresult);
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
         scan_btn.setOnClickListener(new View.OnClickListener() {
             @Override
-<<<<<<< HEAD
-            public void onClick(View view) {
-                continuebtn.setAlpha(1);
-                cancelbtn.setAlpha(1);
-                continuebtn.startAnimation(fade);
-                cancelbtn.startAnimation(fade);
-
-=======
             public void onClick(View v) {
                 IntentIntegrator integrator = new IntentIntegrator(activity);
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE);
@@ -89,7 +44,6 @@ public class Send extends AppCompatActivity {
                 integrator.setBeepEnabled(true);
                 integrator.setBarcodeImageEnabled(false);
                 integrator.initiateScan();
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
             }
         });
@@ -99,13 +53,6 @@ public class Send extends AppCompatActivity {
 
     }
 
-<<<<<<< HEAD
-        cancelbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                cancelbtn.setAlpha(1);
-                cancelbtn.startAnimation(fade);
-=======
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
@@ -116,20 +63,6 @@ public class Send extends AppCompatActivity {
             } else {
                 Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
                 showresult.setText(result.getContents());
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
-            }
-        } else
-            super.onActivityResult(requestCode, resultCode, data);
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if (result != null) {
-            if (result.getContents() == null) {
-                Toast.makeText(this, "You Cancelled the Scanning", Toast.LENGTH_LONG).show();
-            } else {
-                Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
             }
         } else
             super.onActivityResult(requestCode, resultCode, data);

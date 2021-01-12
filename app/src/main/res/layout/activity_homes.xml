@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,42 +8,20 @@
     android:orientation="vertical"
     tools:context=".Homes">
 
-<<<<<<< HEAD
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-=======
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#f2f2f2">
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-
-=======
             android:layout_height="wrap_content"
             android:paddingTop="5dp">
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-<<<<<<< HEAD
-                android:layout_marginTop="12dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Balance"
-                android:textColor="#a9a9a9"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-=======
                 android:layout_margin="4dp"
                 android:fadingEdgeLength="51dp"
                 android:orientation="vertical">
@@ -82,39 +56,10 @@
 
 
             </LinearLayout>
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="2dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingRight="10dp"
-                    android:text="ETB"
-                    android:textColor="#03a9f4"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/balance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="0.00"
-                    android:textColor="#03a9f4"
-                    android:textSize="24dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </LinearLayout>
-=======
                 android:layout_margin="10dp">
 
                 <ImageButton
@@ -135,7 +80,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
         <!-- <ImageView
              android:layout_width="40dp"
@@ -143,46 +87,6 @@
              android:layout_gravity="center"
              android:paddingRight="2dp"
              android:src="@drawable/user" /> -->
-<<<<<<< HEAD
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/accountlayout"
-                android:layout_width="match_parent"
-                android:layout_height="175dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="#ffa500"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="2dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/bungee"
-                        android:paddingRight="10dp"
-                        android:text="Account."
-                        android:textColor="#fff"
-                        android:textSize="18dp"
-                        />
-=======
 
 
         <LinearLayout
@@ -228,7 +132,6 @@
                         <RelativeLayout
                             android:layout_width="25dp"
                             android:layout_height="25dp">
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -268,12 +171,6 @@
                         android:id="@+id/receiveLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-<<<<<<< HEAD
-                        android:fontFamily="sans-serif-medium"
-                        android:text="Link your bank account to your QuickPay to pay quick and pay easy."
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-=======
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:padding="15dp">
@@ -287,22 +184,9 @@
                                 android:layout_height="match_parent"
                                 android:layout_centerInParent="true"
                                 android:src="@drawable/arrow_downward" />
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                         </RelativeLayout>
 
-<<<<<<< HEAD
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="#fff"
-=======
                         <View
                             android:layout_width="20dp"
                             android:layout_height="0dp" />
@@ -325,20 +209,11 @@
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="#FFAB00"
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
-<<<<<<< HEAD
-                    android:id="@+id/topperLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-=======
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
@@ -399,30 +274,11 @@
                     </LinearLayout>
 
 
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
                         android:id="@+id/frontcardbranch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-<<<<<<< HEAD
-                        android:layout_marginTop="12dp"
-                        android:fontFamily="@font/bungee"
-                        android:paddingRight="10dp"
-                        android:text="FUNDS."
-                        android:textColor="#03a9f4"
-                        android:textSize="18dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Deposit and gain quick access to your funds from anywhere"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-
-=======
                         android:fontFamily="sans-serif-medium"
                         android:textSize="12sp"
                         android:text="@string/BankBranch"
@@ -460,53 +316,10 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
                         android:textColor="#FFFFFF" />
 
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-<<<<<<< HEAD
-        </LinearLayout>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
-            android:columnCount="1"
-            android:columnOrderPreserved="false"
-            android:rowCount="2">
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/transactionLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="16dp"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardBackgroundColor="#3a3b3c"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/bungee"
-                            android:text="Transactions"
-                            android:textColor="#fff"
-                            android:textSize="20dp" />
-=======
             <androidx.cardview.widget.CardView
                 android:id="@+id/accountlayout"
                 android:layout_width="match_parent"
@@ -527,16 +340,10 @@
                     android:layout_gravity="center"
                     android:orientation="horizontal"
                     android:padding="16dp">
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-<<<<<<< HEAD
-                        android:fontFamily="sans-serif-medium"
-                        android:text="Keep track of all your payment transactions here."
-                        android:textColor="#fff"
-=======
                         android:layout_marginTop="12dp"
                         android:fontFamily="@font/bungee"
                         android:paddingRight="10dp"
@@ -551,7 +358,6 @@
                         android:fontFamily="sans-serif"
                         android:text="Connect and gain quick access to your funds from anywhere"
                         android:textColor="#000"
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                         android:textSize="12dp" />
 
                 </LinearLayout>
@@ -559,23 +365,6 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-<<<<<<< HEAD
-                android:id="@+id/sendLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardUseCompatPadding="true"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground">
-
-
-                <LinearLayout
-
-=======
                 android:id="@+id/transactionLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -589,33 +378,16 @@
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
 
-<<<<<<< HEAD
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/account" />
-=======
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-<<<<<<< HEAD
-                        android:layout_gravity="center"
-                        android:layout_marginTop="12dp"
-                        android:text="Account"
-                        android:textColor="#03a9f4"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-=======
                         android:fontFamily="@font/bungee"
                         android:text="Transactions"
                         android:textColor="#fff"
@@ -628,7 +400,6 @@
                         android:text="Keep track of all your payment transactions here."
                         android:textColor="#fff"
                         android:textSize="12dp" />
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                 </LinearLayout>
 
@@ -1526,8 +1297,4 @@
     </androidx.core.widget.NestedScrollView>
 
 
-<<<<<<< HEAD
-</androidx.core.widget.NestedScrollView>
-=======
 </LinearLayout>
->>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
