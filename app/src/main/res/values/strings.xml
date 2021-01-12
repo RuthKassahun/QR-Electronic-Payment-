@@ -13,4 +13,10 @@
     <string name="CardType">የቁጠባ ሂሳብ</string>
     <string name="LocationNotFound">ያሉበት ቦታ አልታወቀም</string>
     <string name="UserPhoneNo">ስልክ ቁጥር ያስመዝግቡ</string>
+
+    <string-array name="bankNames">
+        <item>CBE</item>
+        <item>Dashen</item>
+    </string-array>
+
 </resources>
