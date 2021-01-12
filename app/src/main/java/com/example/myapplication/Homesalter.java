@@ -7,6 +7,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< HEAD
+=======
+import android.widget.ImageButton;
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -43,6 +47,11 @@ public class Homesalter extends AppCompatActivity {
         tn001.setClickable(true);
         tn002.setClickable(true);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
         receiveLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,6 +87,11 @@ public class Homesalter extends AppCompatActivity {
         });
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     }
 
     public void ShowPopup() {

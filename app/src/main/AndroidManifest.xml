@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SendViaAccount"></activity>
+        <activity android:name=".staticQR"></activity>
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".hamburgermenu"></activity>
+        <activity android:name=".SignUp2" />
+        <activity android:name=".Login" />
+        <activity android:name=".SendViaAccount" />
         <activity android:name=".AddBankAccount" />
         <activity android:name=".Account" />
         <activity android:name=".Transaction" />
@@ -17,9 +22,11 @@
         <activity android:name=".Send" />
         <activity android:name=".verifyphone" />
         <activity android:name=".Homes" />
+        <activity android:name=".Homesalter" />
         <activity android:name=".loginActivity" />
         <activity android:name=".signUp" />
         <activity android:name=".firstActivity" />
+<<<<<<< HEAD
         <activity android:name=".Login" />
         <activity android:name=".ChooseAccount" />
         <activity android:name=".Homesalter" />
@@ -28,6 +35,9 @@
         <activity android:name=".MainActivity">
 
 
+=======
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:background="#f2f2f2"
     android:padding="20dp"
+<<<<<<< HEAD
+=======
+    android:scrollbars="none"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     android:fillViewport="true"
     tools:context=".Login">
 
@@ -15,6 +19,7 @@
     android:gravity="center_vertical"
     android:orientation="vertical">
 
+<<<<<<< HEAD
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -22,11 +27,17 @@
         android:background="@drawable/rounded_button"
         />
 
+=======
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     <TextView
         android:id="@+id/logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
+<<<<<<< HEAD
+=======
+        android:textAlignment="center"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
         android:text="Hello there, Welcome Back"
         android:textColor="#03a9f4"
         android:textSize="38sp" />
@@ -34,8 +45,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="sans-serif-medium"
         android:text="Sing In to Continue"
+=======
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center"
+        android:text="Sign in to Continue"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
         android:textSize="18sp" />
 
     <LinearLayout

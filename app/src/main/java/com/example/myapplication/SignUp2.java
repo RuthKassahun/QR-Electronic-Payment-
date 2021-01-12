@@ -17,7 +17,11 @@ public class SignUp2 extends AppCompatActivity {
     //Variables
     TextInputLayout regName, regUsername, regEmail, regPhone, regPassword;
     Button regBtn, regLoginBtn;
+<<<<<<< HEAD
     String balance = "200";
+=======
+    String balance = "0.00";
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     FirebaseDatabase rootNode;
     DatabaseReference reference;
 

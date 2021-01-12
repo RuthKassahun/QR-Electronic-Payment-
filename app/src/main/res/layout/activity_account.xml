@@ -10,12 +10,20 @@
     <Button
         android:id="@+id/addBankAccount"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="175dp"
         android:layout_gravity="center"
 
         android:background="@drawable/rounded_button"
         android:text="Add Account"
         android:textColor="#f2f2f2"/>
+=======
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_button"
+        android:text="Add Account"
+        android:textColor="#f2f2f2" />
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
 
 </LinearLayout>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,32 +12,82 @@
     android:orientation="vertical"
     tools:context=".Homes">
 
+<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+=======
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
         <LinearLayout
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:orientation="vertical">
 
+=======
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+<<<<<<< HEAD
                 android:layout_marginTop="12dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Balance"
                 android:textColor="#a9a9a9"
                 android:textSize="20dp"
                 android:textStyle="bold" />
+=======
+                android:layout_margin="4dp"
+                android:fadingEdgeLength="51dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingRight="10dp"
+                        android:text="ETB"
+                        android:textColor="#03a9f4"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0.00"
+                        android:textColor="#03a9f4"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:layout_gravity="center">
 
                 <TextView
@@ -60,6 +114,28 @@
             </LinearLayout>
 
         </LinearLayout>
+=======
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/hamburger_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/hamburger_menu" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
         <!-- <ImageView
              android:layout_width="40dp"
@@ -67,6 +143,7 @@
              android:layout_gravity="center"
              android:paddingRight="2dp"
              android:src="@drawable/user" /> -->
+<<<<<<< HEAD
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,17 +182,116 @@
                         android:textColor="#fff"
                         android:textSize="18dp"
                         />
+=======
 
-                    <TextView
-                        android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="25dp"
+            android:paddingRight="15dp">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/background_item"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/sendLayout"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="25dp"
+                            android:layout_height="25dp">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/arrow_upward" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Send"
+                            android:textColor="#FF3C3F41" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="0dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_weight="1"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/receiveLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+<<<<<<< HEAD
                         android:fontFamily="sans-serif-medium"
                         android:text="Link your bank account to your QuickPay to pay quick and pay easy."
                         android:textColor="#000"
                         android:textSize="12dp" />
+=======
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
 
-                </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="25dp"
+                            android:layout_height="25dp">
 
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/arrow_downward" />
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
+
+                        </RelativeLayout>
+
+<<<<<<< HEAD
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -126,21 +302,110 @@
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
                 app:cardBackgroundColor="#fff"
+=======
+                        <View
+                            android:layout_width="20dp"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Receive"
+                            android:textColor="#FF3C3F41" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFAB00"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
+<<<<<<< HEAD
                     android:id="@+id/topperLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:orientation="horizontal"
                     android:padding="16dp">
+=======
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star"
+                            android:layout_marginRight="28dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_vertical"
+                            android:text="Commercial Bank Of Ethiopia"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/ic_bank" />
+
+
+                    </LinearLayout>
+
+
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
+                        android:id="@+id/frontcardbranch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+<<<<<<< HEAD
                         android:layout_marginTop="12dp"
                         android:fontFamily="@font/bungee"
                         android:paddingRight="10dp"
@@ -157,10 +422,50 @@
                         android:textColor="#000"
                         android:textSize="12dp" />
 
+=======
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="12sp"
+                        android:text="@string/BankBranch"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/frontcardtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="12sp"
+                        android:text="@string/CardType"
+                        android:layout_marginBottom="12dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/frontcardaccountnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="1000147181965"
+                        android:textSize="16sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/frontcardname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="21sp"
+                        android:text="Abenezer Endale"
+                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                        android:textColor="#FFFFFF" />
+
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
+<<<<<<< HEAD
         </LinearLayout>
 
         <GridLayout
@@ -201,21 +506,60 @@
                             android:text="Transactions"
                             android:textColor="#fff"
                             android:textSize="20dp" />
+=======
+            <androidx.cardview.widget.CardView
+                android:id="@+id/accountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:id="@+id/topperLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+<<<<<<< HEAD
                         android:fontFamily="sans-serif-medium"
                         android:text="Keep track of all your payment transactions here."
                         android:textColor="#fff"
+=======
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/bungee"
+                        android:paddingRight="10dp"
+                        android:text="FUNDS."
+                        android:textColor="#03a9f4"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Connect and gain quick access to your funds from anywhere"
+                        android:textColor="#000"
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                         android:textSize="12dp" />
 
                 </LinearLayout>
 
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+<<<<<<< HEAD
                 android:id="@+id/sendLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -231,37 +575,959 @@
 
                 <LinearLayout
 
+=======
+                android:id="@+id/transactionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#3a3b3c"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:orientation="vertical"
                     android:padding="16dp">
 
+<<<<<<< HEAD
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="center"
                         android:src="@drawable/account" />
+=======
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+<<<<<<< HEAD
                         android:layout_gravity="center"
                         android:layout_marginTop="12dp"
                         android:text="Account"
                         android:textColor="#03a9f4"
                         android:textSize="20dp"
                         android:textStyle="bold" />
+=======
+                        android:fontFamily="@font/bungee"
+                        android:text="Transactions"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Keep track of all your payment transactions here."
+                        android:textColor="#fff"
+                        android:textSize="12dp" />
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-        </GridLayout>
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nested_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
 
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center"
+                                android:text="Recent Transactions"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="#999999" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/tn001"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/receive_icon" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="100 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#00d024" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/tn002"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/receive_icon" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0.25 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#00d024" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Debebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/send_icon" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sent"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="250 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kebede"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/receive_icon" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="25,000,000 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#00d024" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Mark Cuban"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginTop="5dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/send_icon" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sent"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1,000,000 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abiy Ahmed"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="2dp"
+                                app:cardCornerRadius="6dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="1dp">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:src="@drawable/ic_email_black_24dp"
+                                            android:tint="#E6E6E6" />
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:layout_width="10dp"
+                                        android:layout_height="0dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Received"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#1A237E" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="30 Nov 20 15:00"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="#999999" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="10 ETB"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                            android:textColor="#03A9FA" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Abebe"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                            android:textColor="#999999" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+<<<<<<< HEAD
 </androidx.core.widget.NestedScrollView>
+=======
+</LinearLayout>
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd

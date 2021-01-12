@@ -2,13 +2,18 @@
     <string name="app_name">Quick Pay</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
+<<<<<<< HEAD
     <string name="stringbalance">200</string>
+=======
+    <string name="stringbalance">2,540.00</string>
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
 
+<<<<<<< HEAD
     <string-array name="bankNames">
         <item>CBE</item>
         <item>DASHEN BANK</item>
@@ -16,4 +21,10 @@
 
 
     </string-array>
+=======
+    <string name="BankBranch">ደብረ ብርሀን ቅርንጫፍ</string>
+    <string name="CardType">የቁጠባ ሂሳብ</string>
+    <string name="LocationNotFound">ያሉበት ቦታ አልታወቀም</string>
+    <string name="UserPhoneNo">ስልክ ቁጥር ያስመዝግቡ</string>
+>>>>>>> 8cbfdb980195638bb94092a332b9f72d4dc8bddd
 </resources>
