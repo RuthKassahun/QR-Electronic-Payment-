@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/purple_background"
+    android:background="#f2f2f2"
     tools:context=".firstActivity">
 
     <ImageView
@@ -13,7 +13,8 @@
         android:layout_height="500dp"
 
         android:scaleType="fitCenter"
-        android:src="@drawable/scana" />
+        android:src="@drawable/scana"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/SignupButton"

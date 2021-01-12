@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/passcode_view"
-         android:background="@drawable/purple_background"
+         android:background="#03a9f4"
         app:correctStateColor="@android:color/holo_green_light"
         app:wrongStateColor="@android:color/darker_gray"
         app:numberTextColor="@android:color/darker_gray"

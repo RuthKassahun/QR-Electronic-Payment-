@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Quick Pay</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
+    <string name="stringbalance">200</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="code">XXXX "\t" XXXX "\t" XXXX "\t" XXXX</string>
 

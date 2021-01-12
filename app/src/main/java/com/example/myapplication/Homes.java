@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +11,10 @@ import android.widget.LinearLayout;
 
 public class Homes extends AppCompatActivity {
 
-    private LinearLayout sendLayout;
-    private LinearLayout recieveLayout;
-    private LinearLayout transactionLayout;
-    private LinearLayout accountLayout;
+    private CardView sendLayout;
+    private LinearLayout topperLayout;
+    private CardView transactionLayout;
+    private CardView accountLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +24,15 @@ public class Homes extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        sendLayout = findViewById(R.id.sendLayout);
-        recieveLayout = findViewById(R.id.recieveLayout);
+        sendLayout =  findViewById(R.id.sendLayout);
+        topperLayout = findViewById(R.id.topperLayout);
         transactionLayout = findViewById(R.id.transactionLayout);
         accountLayout = findViewById(R.id.accountlayout);
 
-        sendLayout.setClickable(true);
-        recieveLayout.setClickable(true);
-        transactionLayout.setClickable(true);
-        accountLayout.setClickable(true);
+        //sendLayout.setClickable(true);
+        topperLayout.setClickable(true);
+        //transactionLayout.setClickable(true);
+        //accountLayout.setClickable(true);
         
 
 
@@ -47,7 +48,7 @@ public class Homes extends AppCompatActivity {
             }
         });
 
-        recieveLayout.setOnClickListener(new View.OnClickListener() {
+        topperLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -60,7 +61,7 @@ public class Homes extends AppCompatActivity {
         transactionLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Homes.this,ChooseAccount.class);
+                Intent i = new Intent(Homes.this,Transaction.class);
                 startActivity(i);
             }
         });
@@ -80,5 +81,6 @@ public class Homes extends AppCompatActivity {
     public void onBackPressed(){
         this.finishAffinity();
     }
+
 
 }

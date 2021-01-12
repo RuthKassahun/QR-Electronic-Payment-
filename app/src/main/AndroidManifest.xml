@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChooseAccount"></activity>
-        <activity android:name=".SendViaAccount" />
+        <activity android:name=".SendViaAccount"></activity>
         <activity android:name=".AddBankAccount" />
         <activity android:name=".Account" />
         <activity android:name=".Transaction" />
@@ -21,7 +20,14 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".signUp" />
         <activity android:name=".firstActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".ChooseAccount" />
+        <activity android:name=".Homesalter" />
+        <activity android:name=".SignUp2" />
+        <activity android:name=".UserProfile" />
         <activity android:name=".MainActivity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
