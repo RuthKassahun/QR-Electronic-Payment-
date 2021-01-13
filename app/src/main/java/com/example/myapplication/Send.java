@@ -1,26 +1,39 @@
 package com.example.myapplication;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class Send extends AppCompatActivity {
-    private LinearLayout scan_btn;
+    private LinearLayout scan_btn,pay_btn,bankpay_btn;
     TextView showresult;
+    Dialog myDialog;
+    TextView TransferAmount, TransferDate,TransferTime;
+
+    FirebaseDatabase CurrentUser;
+    DatabaseReference reference;
+
 
 
     @Override
@@ -28,9 +41,20 @@ public class Send extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send);
 
+
+        TransferAmount = findViewById(R.id.transferedAmount);
+        TransferDate = findViewById(R.id.transferredDate);
+        TransferTime = findViewById(R.id.transferredTime);
+
+
         scan_btn = findViewById(R.id.scan_btn);
+        pay_btn = findViewById(R.id.pay_btn);
+        bankpay_btn = findViewById(R.id.bankpay_btn);
+
         final Activity activity = this;
         scan_btn.setClickable(true);
+        pay_btn.setClickable(true);
+        bankpay_btn.setClickable(true);
         showresult = findViewById(R.id.showresult);
 
         scan_btn.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +72,11 @@ public class Send extends AppCompatActivity {
             }
         });
 
+
+
+
+        myDialog = new Dialog(this);
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
@@ -56,15 +85,108 @@ public class Send extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        final IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {
             if (result.getContents() == null) {
                 Toast.makeText(this, "You Cancelled the Scanning", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
                 showresult.setText(result.getContents());
+
+                pay_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+
+
+
+                        Intent intentcall = new Intent(Intent.ACTION_CALL);
+                        Intent intent = getIntent();
+                        String user_phoneNo = intent.getStringExtra("phoneNo");
+
+                        String amount = result.getContents();
+                        int Uscd = 806;
+                        //int amo = 1;
+                        String  Staar = "*";
+                        String Hashytag = "#";
+
+                        String  completeCode = Staar + Uscd + Staar +  user_phoneNo + Staar + amount +   Hashytag;
+                        //we want to remove the last # from the ussd code as we need to encode it. so *555# becomes *555
+                        completeCode = completeCode.substring(0, completeCode.length() - 1);
+
+                        String UssdCodeNew = completeCode + Uri.encode("#");
+                        intentcall.setData(Uri.parse("tel:"+UssdCodeNew));
+                        if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+
+                            Toast.makeText(Send.this, "Please allow(grant) permission", Toast.LENGTH_SHORT).show();
+                            requestPermission();
+                        } else {
+                            startActivity(intentcall);
+                        }
+
+                    }
+                });
+
+
+                bankpay_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        
+                        int accountNo = 1001418483;
+                        float balance = 500;
+
+                         float amount = Float.parseFloat(result.getContents());
+
+                        if (amount > balance) {
+                            Toast.makeText(Send.this, "Your balance is insufficent", Toast.LENGTH_LONG).show();
+                        } else {
+
+                            float transfer = balance - amount;
+                            Toast.makeText(Send.this, "You transfered " + transfer, Toast.LENGTH_LONG).show();
+                            //ShowPopup((int) amount);
+
+                            Intent i = new Intent(Send.this,TransactionConfirm.class);
+                            startActivity(i);
+
+
+
+                        }
+                    }
+
+
+
+
+                    /*private void ShowPopup(int amount) {
+                        TextView txtclose;
+                        Button btnFollow;
+                        myDialog.setContentView(R.layout.transaction_popup);
+                        TransferAmount.setText("Amount "+ amount);
+                        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+
+                        txtclose.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                myDialog.dismiss();
+                            }
+                        });
+                        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                        myDialog.show();
+
+                    }*/
+                });
+
+
+
+
+
             }
-        } else
-            super.onActivityResult(requestCode, resultCode, data);
+        } else{
+                super.onActivityResult(requestCode, resultCode, data);
+            }
     }
+    private void requestPermission(){
+        ActivityCompat.requestPermissions(Send.this, new String[]{Manifest.permission.CALL_PHONE},1);
+    }
+
 }
